@@ -12,7 +12,7 @@ const config = {
   },
   social: {
     linkedin: '',
-    twitter: 'kryptonbyte',
+    twitter: '',
     facebook: 'kryptonbyte.5',
     dribbble: '',
     behance: '',
