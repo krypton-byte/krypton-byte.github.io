@@ -37,8 +37,8 @@ const Skill = ({ loading, skills }) => {
                       <div
                         key={index}
                         className="m-1 text-xs inline-flex items-center font-bold leading-sm px-3 py-1 badge-primary bg-opacity-90 rounded-full"
-                      ><i className={`devicon-${skill.toLowerCase()}-plain colored mr-2`}></i>
-                        {skill}
+                      ><i className={`devicon-${skill.toLowerCase()}-plain colored`}></i>&nbsp;
+                      {skill}
                       </div>
                     ))}
               </div>

@@ -30,6 +30,20 @@ const config = {
     'MySQL',
     'Git',
   ],
+  education: [
+    {
+      institution: 'SMPN 2 DAWUAN',
+      degree: 'Junior High School',
+      from: '2016',
+      to: '2019',
+    },
+    {
+      institution: 'SMKN 1 Panyingkiran',
+      degree: 'Vocational High School',
+      from: '2019',
+      to: '2022',
+    }
+  ],
   experiences: [],
   // Display blog posts from your medium or dev account. (Optional)
   blog: {
