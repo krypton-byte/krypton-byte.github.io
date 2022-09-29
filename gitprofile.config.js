@@ -42,6 +42,12 @@ const config = {
       degree: 'Vocational High School',
       from: '2019',
       to: '2022',
+    },
+    {
+      institution: 'STKIP YASIKA',
+      degree: 'Bachelor of Mathematic Eductaion',
+      from: '2022',
+      to: 'now',
     }
   ],
   experiences: [],
