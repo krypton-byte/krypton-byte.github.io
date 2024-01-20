@@ -44,7 +44,7 @@ const config = {
       to: '2022',
     },
     {
-      institution: 'STKIP YASIKA',
+      institution: 'STKIP YASIKA Majalengka',
       degree: 'Bachelor of Mathematic Education',
       from: '2022',
       to: 'now',
