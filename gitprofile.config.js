@@ -44,7 +44,7 @@ const config = {
       to: '2022',
     },
     {
-      institution: 'STKIP YASIKA Majalengka',
+      institution: 'Universitas Sindang Kasih Majalengka',
       degree: 'Bachelor of Mathematic Education',
       from: '2022',
       to: 'now',
