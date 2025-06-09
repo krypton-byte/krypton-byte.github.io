@@ -12,16 +12,14 @@ jobs:
     name: my-job
     runs-on: ubuntu-latest
     steps:
-      # ...
       - uses: actions/checkout@v4
       - uses: oven-sh/setup-bun@v2
       - name: Cache dependencies
-        uses: actions/cache@v2
+        uses: actions/cache@v4
         with:
           path: |
             **/node_modules
           key: ${{ runner.os }}-${{ hashFiles('**/bun.lock') }}
-      # run any `bun` or `bunx` command
       - run: bun i
       - run: bun run build
       - name: Deploy
