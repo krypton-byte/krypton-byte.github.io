@@ -22,6 +22,8 @@ jobs:
           key: ${{ runner.os }}-${{ hashFiles('**/bun.lock') }}
       - run: bun i
       - run: bun run build
+      - name: Add .nojekyll file
+        run: echo "" > out/.nojekyll
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
