@@ -147,6 +147,7 @@ export default function ProjectsSection() {
                     variant="default"
                     size="sm"
                     className="bg-gray-700 hover:bg-gray-600 text-white transition-all duration-300"
+                    onClick={() => window.open(project.github, '_blank')}
                   >
                     <Github size={16} className="mr-2" />
                     Code
@@ -154,6 +155,7 @@ export default function ProjectsSection() {
                   <Button
                     size="sm"
                     className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-400 hover:to-green-500 text-black font-medium transition-all duration-300"
+                    onClick={() => window.open(project.live, '_blank')}
                   >
                     <ExternalLink size={16} className="mr-2" />
                     Live Demo

@@ -1,0 +1,31 @@
+name: Deploy to gh-pages Branch
+
+on:
+  push:
+    branches: [v2]
+
+permissions:
+  contents: write
+name: my-workflow
+jobs:
+  my-job:
+    name: my-job
+    runs-on: ubuntu-latest
+    steps:
+      # ...
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v2
+      - name: Cache dependencies
+        uses: actions/cache@v2
+        with:
+          path: |
+            **/node_modules
+          key: ${{ runner.os }}-${{ hashFiles('**/bun.lock') }}
+      # run any `bun` or `bunx` command
+      - run: bun i
+      - run: bun run build
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: out
