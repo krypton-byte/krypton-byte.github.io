@@ -8,7 +8,7 @@ permissions:
   contents: write
 
 jobs:
-  my-job:
+  deploy:
     name: my-job
     runs-on: ubuntu-latest
     steps:
